@@ -1,0 +1,138 @@
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #222;
+}
+.fot1{
+  position: relative;
+  width:260px;
+  height: 220px;
+  margin: 15px;
+  overflow: hidden;
+}
+.house1 img
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.fot1 .thing1::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+  transition-delay: 0.5s;
+}
+.fot1:hover .thing1::before
+{
+  transform: scaleX(1);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
+  transition-delay: 0s;
+}
+
+.thing1
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .fragment1
+{
+  position: relative;
+  padding: 0px;
+  z-index: 1;
+  transition: 0.5s;
+  transform: translateX(-400px);
+  transition-delay: 0s;
+}
+ .fot1:hover .thing1 .fragment1
+{
+  transform: translateX(0px);
+  transition-delay: 0.5s;
+}
+
+.bahs
+{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+}
+.fot
+{
+  position: relative;
+  width:180px;
+  height: 100px;
+  margin: 5px;
+  top:5px;
+  overflow: hidden;
+}
+ .house img
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bahs .fot .thing::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+  transition-delay: 0.5s;
+}
+.bahs .fot:hover .thing::before
+{
+  transform: scaleX(1);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
+  transition-delay: 0s;
+}
+ .thing
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .fragment
+{
+  position: relative;
+  padding: 0px;
+  z-index: 1;
+  transition: 0.5s;
+  transform: translateX(-180px);
+  transition-delay: 0s;
+}
+.bahs .fot:hover .thing .fragment
+{
+  transform: translateX(0px);
+  transition-delay: 0.5s;
+}
+ h3
+{
+  font-size: 18px;
+}
+ p
+{
+  font-size: 14px;
+  line-height: 1.4em;
+}
